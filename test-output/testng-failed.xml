@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.io.rest.pet.api_test.PetApiTest">
+        <methods>
+          <include name="givenPetID_Delete_InvalidPet_Check_StatusCode404"/>
+          <include name="givenPetIdReturn_Pet_Data_Check_StatusCode200"/>
+          <include name="givenInvalid_PetID_checkGetPetId_Check_StatusCode404"/>
+          <include name="givenPetID_Update_Check_StatusCode200"/>
+          <include name="givenPetId_Delete_Pet_Check_StatusCode200"/>
+          <include name="setUp"/>
+          <include name="givenValidDetails_Create_PetData_Check_StatusCode200"/>
+        </methods>
+      </class> <!-- com.io.rest.pet.api_test.PetApiTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

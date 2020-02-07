@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "5f314b2a-6609-4f0d-bf10-74eff3efec8b",
+		"name": "petstore-apitests",
+		"description": "petstore-apitests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-new-pet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 41,\r\n    \"category\": {\r\n    \"id\": 41,\r\n    \"name\": \"Hound Group\"\r\n  },\r\n    \"name\": \"Beagle\",\r\n    \"photoUrls\": [\r\n        \"https://images.dog.ceo/breeds/beagle/n02088364_4879.jpg\"\r\n    ],\r\n    \"tags\": [\r\n    {\r\n      \"id\": 41,\r\n      \"name\": \"Hound\"\r\n    }\r\n  ],\r\n    \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						""
+					]
+				},
+				"description": "createNewPet"
+			},
+			"response": []
+		},
+		{
+			"name": "get-petname-by-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "getPetNameByID"
+			},
+			"response": []
+		},
+		{
+			"name": "update-pet-details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "BeagleUpd2",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "sold",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/41?name=Beagle&status=sold",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"41"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Beagle"
+						},
+						{
+							"key": "status",
+							"value": "sold"
+						}
+					]
+				},
+				"description": "updatePetDetails"
+			},
+			"response": []
+		},
+		{
+			"name": "get-petname-by-id Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "getPetNameByID"
+			},
+			"response": []
+		},
+		{
+			"name": "delete-pet",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/41",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"41"
+					]
+				},
+				"description": "Deletes Pet by ID"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
