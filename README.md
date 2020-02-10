@@ -1,25 +1,20 @@
-About
-This project uses Rest-Assured API and TESTNG to test the following API - https://petstore.swagger.io/#/pet
+
+Aim is to the test the swagger petstore by designing few automated test cases using Rest assured library and TestNG as the framework
+API - https://petstore.swagger.io/#/pet
 
 The below tests are created to demonstrate 
 1. Create a new pet using POST method and verifying if the created pet is in line with the supplied details
 2. Retrieve the pet details using petID through GET method
-3. Update the pet name using POST methid
+3. Update the pet name using POST method
 4. Delete the pet details using DELETE method
 
-The Pet Id is maintained in the properties file and can be changed
 
-TestNG tests are executed in the order of priority mentioned
+The user has to execute the test cases by running te TestNG file(test cases has been prioritised accordingly)
 Tests can be configured to be executed at class level or individual tests level
-Configuration is attached in the project for reference - TESTNG_Config.jpg
+Configuration & property files are attached in the project for reference and can be changed accordingly - TESTNG_Config.jpg
 
-The POSTMAN tests are added under the project
+Have also added the POSTMAN collection tests are added under the project(incase of manual intervention)
 
 
-RestAssured
-Rest-Assured is an open-source Java Domain-specific language (DSL) that makes testing REST service simple. It simplifies things by eliminating the need to use boiler-plate code to test and validate complex responses. It also supports XML and JSON Request/Responses.
-You can find more information in this webpage: http://rest-assured.io/
 
-TestNG
-More information can be found here - https://testng.org/doc/
 
